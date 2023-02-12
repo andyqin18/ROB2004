@@ -24,7 +24,8 @@ class NYUFingerSimulator:
         p.setPhysicsEngineParameter(fixedTimeStep=self.dt, numSubSteps=1)
 
         # Zoom onto the robot.
-        p.resetDebugVisualizerCamera(1.0, 50, -35, (0., 0., 0.))
+#         p.resetDebugVisualizerCamera(1.0, 50, -35, (0., 0., 0.))
+        p.resetDebugVisualizerCamera(1.0, 0, -20, (0., 0., 0.))
 
         # Disable the gui controller as we don't use them.
         p.configureDebugVisualizer(p.COV_ENABLE_GUI,0)
